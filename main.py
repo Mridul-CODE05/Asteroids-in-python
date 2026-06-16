@@ -36,7 +36,7 @@ def main():
                 if aste_roid.collides_with(shot):
                     log_event("asteroid_shot")
                     shot.kill()
-                    aste_roid.kill()
+                    aste_roid.split()
             if aste_roid.collides_with(player):
                 log_event("player_hit")
                 print("Game over!")
